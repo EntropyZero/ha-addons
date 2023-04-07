@@ -1,0 +1,7 @@
+configuration:
+  hostname:
+    name: Hostname
+    description: This is the IP address or DNS name of the VirtualHere Hub
+  usb_device_id:
+    name: USB Device ID
+    description: "USB Device ID in the following format: {Hub Serial Number}.{USB Product ID}.{USB Vendor ID}.{Port Address (Optional)}"

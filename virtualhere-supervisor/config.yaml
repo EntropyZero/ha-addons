@@ -1,0 +1,24 @@
+# https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
+name: VirtualHere Supervisor
+version: "1.0.0"
+slug: virtualhere-supervisor
+description: This addon is used to launch the virtualhere client container as privileged so it can create USB devices.
+url: "https://github.com/EntropyZero/ha-addons/tree/main/virtualhere-supervisor"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+docker_api: true
+kernel_modules: true
+startup: system
+advanced: true
+options:
+  hostname: "127.0.0.1"
+  usb_device_id: "0000000047e3c3c2.512.3221.1113"
+schema:
+  hostname: "str"
+  usb_device_id: "str"
+#image: "ghcr.io/home-assistant/{arch}-addon-example"
