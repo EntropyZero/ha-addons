@@ -21,4 +21,4 @@ options:
 schema:
   hostname: "str"
   usb_device_id: "str"
-#image: "ghcr.io/home-assistant/{arch}-addon-example"
+image: "ghcr.io/EntropyZero/{arch}-addon-virtualhere-supervisor"
