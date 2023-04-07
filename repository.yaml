@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
 name: Ent0 add-ons for Home Assistant
-url: "https://github.com/EntropyZero/ha-addons"
+url: "https://github.com/entropyzero/ha-addons"
 maintainer: EntropyZero <info@ent0.com>
