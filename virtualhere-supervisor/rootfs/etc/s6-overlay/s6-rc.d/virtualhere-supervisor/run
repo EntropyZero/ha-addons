@@ -7,13 +7,15 @@
 # Add your code here
 
 # Declare variables
-declare message
+declare hostname
+declare usb_device_id
 
-## Get the 'message' key from the user config options.
-message=$(bashio::config 'message')
+hostname=$(bashio::config 'hostname')
+usb_device_id=$(bashio::config 'usb_device_id')
 
 ## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${message:="Hello World..."}"
+bashio::log.info "${hostname}"
 
 ## Run your program
 exec docker ps
+echo ${usb_device_id}
