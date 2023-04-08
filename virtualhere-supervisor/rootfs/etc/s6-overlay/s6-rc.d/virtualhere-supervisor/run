@@ -17,5 +17,8 @@ usb_device_id=$(bashio::config 'usb_device_id')
 bashio::log.info "${hostname}"
 
 ## Run your program
-exec docker ps
-echo ${usb_device_id}
+echo "Hello there"
+echo "${usb_device_id}"
+echo "Device"
+
+docker run -t --privileged --rm --name vhworker --env VH_HOSTNAME="${hostname}" --env VH_USB_DEVICE_ID="${usb_device_id}" wantmys2000/virtualhere-ha-worker:latest
