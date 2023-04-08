@@ -21,4 +21,4 @@ options:
 schema:
   hostname: "str"
   usb_device_id: "str"
-image: "ghcr.io/entropyzero/{arch}-addon-virtualhere-supervisor:1.0.6"
+image: "ghcr.io/entropyzero/{arch}-addon-virtualhere-supervisor"
