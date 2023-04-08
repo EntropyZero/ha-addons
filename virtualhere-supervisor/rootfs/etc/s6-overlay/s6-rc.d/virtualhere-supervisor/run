@@ -4,21 +4,17 @@
 # s6-overlay docs: https://github.com/just-containers/s6-overlay
 # ==============================================================================
 
-# Add your code here
-
 # Declare variables
 declare hostname
 declare usb_device_id
 
+#Load Config
 hostname=$(bashio::config 'hostname')
 usb_device_id=$(bashio::config 'usb_device_id')
 
-## Print the message the user supplied, defaults to "Hello World..."
-bashio::log.info "${hostname}"
+
+#Initalize USBIP Kernel Module
+modprobe vhci-hcd
 
 ## Run your program
-echo "Hello there"
-echo "${usb_device_id}"
-echo "Device"
-
 docker run -t --privileged --rm --name vhworker --env VH_HOSTNAME="${hostname}" --env VH_USB_DEVICE_ID="${usb_device_id}" wantmys2000/virtualhere-ha-worker:latest

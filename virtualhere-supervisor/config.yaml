@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: VirtualHere Supervisor
-version: "1.0.6"
+version: "1.0.7"
 slug: virtualhere-supervisor
 description: This addon is used to launch the virtualhere client container as privileged so it can create USB devices.
 url: "https://github.com/entropyzero/ha-addons/tree/main/virtualhere-supervisor"
